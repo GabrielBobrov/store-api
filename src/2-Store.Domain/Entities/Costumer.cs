@@ -11,6 +11,9 @@ namespace Store.Domain.Entities
         public string Name { get; private set; }
         public string Email { get; private set; }
 
+        //EF Relations
+        public IList<Order> Orders { get; private set; }
+
         //EF
         protected Costumer() { }
 

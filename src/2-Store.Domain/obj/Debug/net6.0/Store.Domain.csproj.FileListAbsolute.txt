@@ -1,0 +1,15 @@
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/bin/Debug/net6.0/Store.Domain.deps.json
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/bin/Debug/net6.0/Store.Domain.dll
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/bin/Debug/net6.0/Store.Domain.pdb
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/bin/Debug/net6.0/Store.Core.dll
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/bin/Debug/net6.0/Store.Core.pdb
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/obj/Debug/net6.0/Store.Domain.csproj.AssemblyReference.cache
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/obj/Debug/net6.0/Store.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/obj/Debug/net6.0/Store.Domain.AssemblyInfoInputs.cache
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/obj/Debug/net6.0/Store.Domain.AssemblyInfo.cs
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/obj/Debug/net6.0/Store.Domain.csproj.CoreCompileInputs.cache
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/obj/Debug/net6.0/Store.Domain.csproj.CopyComplete
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/obj/Debug/net6.0/Store.Domain.dll
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/obj/Debug/net6.0/refint/Store.Domain.dll
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/obj/Debug/net6.0/Store.Domain.pdb
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/obj/Debug/net6.0/ref/Store.Domain.dll

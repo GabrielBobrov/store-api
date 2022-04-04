@@ -1,0 +1,12 @@
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/bin/Debug/net6.0/Store.Core.deps.json
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/bin/Debug/net6.0/Store.Core.dll
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/bin/Debug/net6.0/Store.Core.pdb
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/obj/Debug/net6.0/Store.Core.csproj.AssemblyReference.cache
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/obj/Debug/net6.0/Store.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/obj/Debug/net6.0/Store.Core.AssemblyInfoInputs.cache
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/obj/Debug/net6.0/Store.Core.AssemblyInfo.cs
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/obj/Debug/net6.0/Store.Core.csproj.CoreCompileInputs.cache
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/obj/Debug/net6.0/Store.Core.dll
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/obj/Debug/net6.0/refint/Store.Core.dll
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/obj/Debug/net6.0/Store.Core.pdb
+/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/obj/Debug/net6.0/ref/Store.Core.dll
