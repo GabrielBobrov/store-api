@@ -1,4 +1,4 @@
-namespace R6.Core.Enums
+namespace Store.Core.Enums
 {
     public enum DomainNotificationType
     {
