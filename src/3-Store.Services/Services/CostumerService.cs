@@ -20,15 +20,18 @@ namespace Store.Services.Services
     {
         private readonly IMapper _mapper;
         private readonly ICostumerRepository _costumerRepository;
+        private readonly IOrderRepository _orderRepository;
         private readonly IMediatorHandler _mediator;
 
         public CostumerServices(
             IMapper mapper,
             ICostumerRepository costumerRepository,
+            IOrderRepository orderRepository,
             IMediatorHandler mediator)
         {
             _mapper = mapper;
             _costumerRepository = costumerRepository;
+            _orderRepository = orderRepository;
             _mediator = mediator;
         }
 
@@ -75,7 +78,27 @@ namespace Store.Services.Services
 
         public async Task<Optional<CostumerDto>> GetAsync(long id)
         {
+            Expression<Func<Order, bool>> filter = op
+               => op.Costumer.Id == id;
+
             var costumer = await _costumerRepository.GetAsync(id);
+
+            if (costumer == null)
+            {
+                await _mediator.PublishDomainNotificationAsync(new DomainNotification(
+                    ErrorMessages.CostumerNotFound,
+                    DomainNotificationType.CostumerNotFound));
+
+                return new Optional<CostumerDto>();
+            }
+
+            var orders = await _orderRepository.SearchAsync(filter);
+
+            foreach (var order in orders)
+            {
+                costumer.SetOrders(order);
+            }
+
             var costumerDto = _mapper.Map<CostumerDto>(costumer);
 
             return new Optional<CostumerDto>(costumerDto);

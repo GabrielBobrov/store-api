@@ -72,6 +72,7 @@ builder.Services.AddSingleton(autoMapperConfig.CreateMapper());
 builder.Services.AddSingleton(d => builder.Configuration);
 builder.Services.AddScoped<ICostumerServices, CostumerServices>();
 builder.Services.AddScoped<ICostumerRepository, CostumerRepository>();
+builder.Services.AddScoped<IOrderRepository, orderRepository>();
 #endregion
 
 #region Database

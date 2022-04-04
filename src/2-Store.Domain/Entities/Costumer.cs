@@ -40,6 +40,12 @@ namespace Store.Domain.Entities
             Validate();
         }
 
+        public void SetOrders(Order order)
+        {
+            Orders.Add(order);
+            Validate();
+        }
+
         //Autovalida
         public bool Validate()
             => base.Validate(new CostumerValidator(), this);
