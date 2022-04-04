@@ -70,10 +70,10 @@ namespace Store.Services.Services
 
         public async Task<Optional<IList<CostumerDto>>> GetAllAsync()
         {
-            var allOperators = await _costumerRepository.GetAllAsync();
-            var allOperatorsDto = _mapper.Map<IList<CostumerDto>>(allOperators);
+            var allcostumers = await _costumerRepository.GetAllAsync();
+            var allCostumersDto = _mapper.Map<IList<CostumerDto>>(allcostumers);
 
-            return new Optional<IList<CostumerDto>>(allOperatorsDto);
+            return new Optional<IList<CostumerDto>>(allCostumersDto);
         }
 
         public async Task<Optional<CostumerDto>> GetAsync(long id)
