@@ -2,6 +2,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\5-Store.Core\Store.Core.csproj" />
+    <ProjectReference Include="..\4-Store.Infra\Store.Infra.csproj" />
+    <ProjectReference Include="..\2-Store.Domain\Store.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="automapper" Version="10.1.1" />
+    <PackageReference Include="EscNet" Version="6.0.1" />
   </ItemGroup>
 
   <PropertyGroup>

@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "1hnyUi8RNIjL7+6xIlAYVqI7jf52C5p208fFeN0uWZxMRTFRC03FYL8bbYqlR/jN5bXcZtGdkbW/wzo0cp6CRg==",
+  "dgSpecHash": "s/i4YtqzCvYs0OSPj0FGKH2RIpcQ0ZXKbfzZpEEMYzUa101yeVUCqd1+s/E66Kkl+l6YfGXr3zEcRpajhmiB5g==",
   "success": true,
   "projectFilePath": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/Store.Domain.csproj",
   "expectedPackageFiles": [
-    "/Users/gabrielgomesbobrovlopes/.nuget/packages/fluentvalidation/10.4.0/fluentvalidation.10.4.0.nupkg.sha512"
+    "/Users/gabrielgomesbobrovlopes/.nuget/packages/fluentvalidation/10.4.0/fluentvalidation.10.4.0.nupkg.sha512",
+    "/Users/gabrielgomesbobrovlopes/.nuget/packages/mediatr/10.0.1/mediatr.10.0.1.nupkg.sha512",
+    "/Users/gabrielgomesbobrovlopes/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512"
   ],
   "logs": []
 }

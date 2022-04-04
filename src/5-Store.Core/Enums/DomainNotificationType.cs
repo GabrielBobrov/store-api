@@ -2,7 +2,9 @@ namespace Store.Core.Enums
 {
     public enum DomainNotificationType
     {
-        UserNotFound,
+        CostumerAlreadyExists,
+        CostumerNotFound,
+        CostumerInvalid,
         InvalidEnum,
     }
 }
