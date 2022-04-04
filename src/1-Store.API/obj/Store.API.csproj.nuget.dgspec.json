@@ -25,7 +25,20 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/Store.Domain.csproj": {
+                "projectPath": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/Store.Domain.csproj"
+              },
+              "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/3-Store.Services/Store.Services.csproj": {
+                "projectPath": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/3-Store.Services/Store.Services.csproj"
+              },
+              "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/4-Store.Infra/Store.Infra.csproj": {
+                "projectPath": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/4-Store.Infra/Store.Infra.csproj"
+              },
+              "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/Store.Core.csproj": {
+                "projectPath": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/Store.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -38,9 +51,37 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "EscNet": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "automapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
             }
           },
           "imports": [
@@ -57,6 +98,279 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/Store.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/Store.Domain.csproj",
+        "projectName": "Store.Domain",
+        "projectPath": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/Store.Domain.csproj",
+        "packagesPath": "/Users/gabrielgomesbobrovlopes/.nuget/packages/",
+        "outputPath": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/gabrielgomesbobrovlopes/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/Store.Core.csproj": {
+                "projectPath": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/Store.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "fluentvalidation": {
+              "target": "Package",
+              "version": "[10.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/3-Store.Services/Store.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/3-Store.Services/Store.Services.csproj",
+        "projectName": "Store.Services",
+        "projectPath": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/3-Store.Services/Store.Services.csproj",
+        "packagesPath": "/Users/gabrielgomesbobrovlopes/.nuget/packages/",
+        "outputPath": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/3-Store.Services/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/gabrielgomesbobrovlopes/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/Store.Domain.csproj": {
+                "projectPath": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/Store.Domain.csproj"
+              },
+              "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/4-Store.Infra/Store.Infra.csproj": {
+                "projectPath": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/4-Store.Infra/Store.Infra.csproj"
+              },
+              "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/Store.Core.csproj": {
+                "projectPath": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/Store.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EscNet": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "automapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/4-Store.Infra/Store.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/4-Store.Infra/Store.Infra.csproj",
+        "projectName": "Store.Infra",
+        "projectPath": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/4-Store.Infra/Store.Infra.csproj",
+        "packagesPath": "/Users/gabrielgomesbobrovlopes/.nuget/packages/",
+        "outputPath": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/4-Store.Infra/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/gabrielgomesbobrovlopes/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/Store.Domain.csproj": {
+                "projectPath": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/2-Store.Domain/Store.Domain.csproj"
+              },
+              "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/Store.Core.csproj": {
+                "projectPath": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/Store.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityframeworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityframeworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityframeworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/Store.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/Store.Core.csproj",
+        "projectName": "Store.Core",
+        "projectPath": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/Store.Core.csproj",
+        "packagesPath": "/Users/gabrielgomesbobrovlopes/.nuget/packages/",
+        "outputPath": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/gabrielgomesbobrovlopes/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "mediatr": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
