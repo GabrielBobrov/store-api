@@ -4,6 +4,7 @@ namespace Store.API.Messages
     {
         public const string SuccessMessageGetAllOCostumers = "Clientes encontrados com sucesso!";
         public const string SuccessMessageGetCostumer = "Cliente encontrado com sucesso!";
+        public const string SuccessMessageCreateCostumer = "Cliente criado com sucesso!";
 
     }
 }

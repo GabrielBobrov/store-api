@@ -61,7 +61,7 @@ namespace Store.API.Controllers
 
             return Created(new ResultViewModel
             {
-                Message = "Usuário criado com sucesso!",
+                Message = ResponseMessages.SuccessMessageCreateCostumer,
                 Success = true,
                 Data = costumerCreated.Value
             });
