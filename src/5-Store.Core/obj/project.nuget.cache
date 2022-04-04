@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "My8+CEF1Bo75/Ocy+6YIuws6CIQmDV+cxZo6GtlEPc3oN+etBr7E9bsXy1W3ybjGP+VC65vtZO/UjuxVL9dfEg==",
+  "dgSpecHash": "dEjat5YD6Cvez69MBuKCR+0OX+s7tLTjiC0aK0WUAWKvbT4iYsAQJ/BQcHM4oIFgo0Ita6NXbz4nhgrFD97PUA==",
   "success": true,
   "projectFilePath": "/Users/gabrielgomesbobrovlopes/Desktop/dev/VisualStudio/Store/src/5-Store.Core/Store.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/gabrielgomesbobrovlopes/.nuget/packages/mediatr/10.0.1/mediatr.10.0.1.nupkg.sha512",
+    "/Users/gabrielgomesbobrovlopes/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
