@@ -4,11 +4,11 @@ using Store.Infra.Interfaces;
 
 namespace Store.Infra.Repositories
 {
-    public class OperatorRepository : BaseRepository<Costumer>, ICostumerRepository
+    public class CostumerRepository : BaseRepository<Costumer>, ICostumerRepository
     {
         private readonly StoreContext _context;
 
-        public OperatorRepository(StoreContext context) : base(context)
+        public CostumerRepository(StoreContext context) : base(context)
         {
             _context = context;
         }
