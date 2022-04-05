@@ -26,7 +26,6 @@ namespace Store.Services.Services
         private readonly IMediatorHandler _mediator;
         private readonly IEmailSender _emailSender;
 
-
         public CostumerServices(
             IMapper mapper,
             ICostumerRepository costumerRepository,
