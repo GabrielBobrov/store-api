@@ -13,6 +13,10 @@ namespace Store.Domain.Validators
 
                 .NotNull()
                 .WithMessage("A entidade não pode ser nula.");
+
+            RuleFor(x => x.Status)
+                .NotNull()
+                .WithMessage("É necessário informar o status da ordem.");
         }
     }
 }
