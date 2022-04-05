@@ -47,5 +47,11 @@ namespace Store.Domain.Entities
         //Autovalida
         public bool Validate()
             => base.Validate(new OrderValidator(), this);
+
+        public void setStatus(Status status)
+        {
+            Status = status;
+            Validate();
+        }
     }
 }

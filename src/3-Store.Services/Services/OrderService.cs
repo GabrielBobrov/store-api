@@ -52,6 +52,7 @@ namespace Store.Services.Services
 
             var order = _mapper.Map<Order>(orderDto);
 
+            order.setStatus(Status.Awaiting);
             order.SetCreatedAt(DateTime.UtcNow);
             order.Validate();
 
