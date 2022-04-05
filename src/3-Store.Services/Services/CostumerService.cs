@@ -94,12 +94,15 @@ namespace Store.Services.Services
 
             var orders = await _orderRepository.SearchAsync(filter);
 
-            foreach (var order in orders)
-            {
-                costumer.SetOrders(order);
-            }
-
             var costumerDto = _mapper.Map<CostumerDto>(costumer);
+
+            costumerDto.Orders = new List<OrderDto>();
+
+            foreach (var o in orders)
+            {
+                var orderDto = _mapper.Map<OrderDto>(o);
+                costumerDto.Orders.Add(orderDto);
+            }
 
             return new Optional<CostumerDto>(costumerDto);
         }
