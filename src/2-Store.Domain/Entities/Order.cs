@@ -12,6 +12,7 @@ namespace Store.Domain.Entities
         public decimal Price { get; private set; }
         public DateTime CreatedAt { get; private set; }
         public Status Status { get; private set; }
+        public long CostumerId { get; private set; }
 
         //EF Relations
         public Costumer Costumer { get; private set; }
@@ -19,11 +20,13 @@ namespace Store.Domain.Entities
         //EF
         protected Order() { }
 
-        public Order(decimal price, DateTime createdAt)
+        public Order(decimal price, DateTime createdAt, Status status, long costumerId)
         {
             Price = price;
             CreatedAt = createdAt;
             _errors = new List<string>();
+            Status = status;
+            CostumerId = costumerId;
 
             Validate();
         }
@@ -33,6 +36,11 @@ namespace Store.Domain.Entities
         public void SetPrice(decimal price)
         {
             Price = price;
+            Validate();
+        }
+        public void SetCreatedAt(DateTime dateTime)
+        {
+            CreatedAt = dateTime;
             Validate();
         }
 
