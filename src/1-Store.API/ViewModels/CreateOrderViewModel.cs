@@ -12,7 +12,6 @@ namespace Store.API.ViewModels
         [EnumDataType(typeof(Status), ErrorMessage = "Informe um status válido")]
         public string? Status { get; set; }
 
-
         [Required(ErrorMessage = "O id do cliente não pode ser vazio.")]
         public int CostumerId { get; set; }
     }

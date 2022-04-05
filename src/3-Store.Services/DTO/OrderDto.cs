@@ -4,13 +4,13 @@ namespace Store.Services.DTO
 {
     public class OrderDto
     {
-        public int Id { get; set; }
+        public long Id { get; set; }
         public decimal Price { get; set; }
         public DateTime CreatedAt { get; set; }
         public string Status { get; set; }
         public int CostumerId { get; set; }
 
-        public OrderDto(int id, DateTime createdAt, decimal price, string status, int costumerId)
+        public OrderDto(long id, DateTime createdAt, decimal price, string status, int costumerId)
         {
             Id = id;
             Price = price;
