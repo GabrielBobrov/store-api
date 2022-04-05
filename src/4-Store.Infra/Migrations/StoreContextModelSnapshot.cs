@@ -4,7 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using Store.Core.Enums;
 using Store.Infra.Context;
 
 #nullable disable
@@ -66,8 +65,9 @@ namespace Store.Infra.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("numeric");
 
-                    b.Property<Status>("Status")
-                        .HasColumnType("status");
+                    b.Property<int>("Status")
+                        .HasColumnType("integer")
+                        .HasColumnName("Status");
 
                     b.HasKey("Id");
 

@@ -11,7 +11,6 @@ namespace Store.Infra.Context
     {
         public StoreContext()
         {
-            NpgsqlConnection.GlobalTypeMapper.AddGlobalTypeMappers();
         }
 
         public StoreContext(DbContextOptions<StoreContext> options) : base(options)

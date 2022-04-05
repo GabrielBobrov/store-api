@@ -5,7 +5,6 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using Store.Core.Enums;
 using Store.Infra.Context;
 
 #nullable disable
@@ -13,7 +12,7 @@ using Store.Infra.Context;
 namespace Store.Infra.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20220404171921_InitialMigration")]
+    [Migration("20220405025833_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -68,8 +67,9 @@ namespace Store.Infra.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("numeric");
 
-                    b.Property<Status>("Status")
-                        .HasColumnType("status");
+                    b.Property<int>("Status")
+                        .HasColumnType("integer")
+                        .HasColumnName("Status");
 
                     b.HasKey("Id");
 

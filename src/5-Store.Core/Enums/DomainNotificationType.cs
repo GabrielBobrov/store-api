@@ -5,6 +5,7 @@ namespace Store.Core.Enums
         CostumerAlreadyExists,
         CostumerNotFound,
         CostumerInvalid,
+        OrderInvalid,
         InvalidEnum,
     }
 }

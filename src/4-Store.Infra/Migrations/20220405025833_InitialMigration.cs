@@ -1,7 +1,6 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using Store.Core.Enums;
 
 #nullable disable
 
@@ -36,7 +35,7 @@ namespace Store.Infra.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Price = table.Column<decimal>(type: "numeric", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    Status = table.Column<Status>(type: "status", nullable: false),
+                    Status = table.Column<int>(type: "integer", nullable: false),
                     CostumerId = table.Column<long>(type: "BIGINT", nullable: false)
                 },
                 constraints: table =>
