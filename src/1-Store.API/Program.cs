@@ -120,7 +120,7 @@ builder.Services.AddSwaggerGen(c =>
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         In = ParameterLocation.Header,
-        Description = "Por favor utilize Bearer <TOKEN>",
+        Description = "Please use Bearer <TOKEN>",
         Name = "Authorization",
         Type = SecuritySchemeType.ApiKey
     });
