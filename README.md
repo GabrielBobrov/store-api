@@ -18,7 +18,7 @@ Or if using visual studio, put the same project as startup project and start
 
 In this project, swagger is used, all endpoints will be available here:
 
-* https://localhost:7045/swagger/index.html
+* https://localhost:7045/swagger
 
 To make calls you will need to be authenticated, use the json below to authenticate and generate a bearer token
 
