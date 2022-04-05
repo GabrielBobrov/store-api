@@ -106,9 +106,9 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "R6 API",
+        Title = "Store API",
         Version = "v1",
-        Description = "API de uma loja",
+        Description = "API made in a technical test on Ilia Digital",
         Contact = new OpenApiContact
         {
             Name = "Gabriel Bobrov",
