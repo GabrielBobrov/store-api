@@ -34,10 +34,10 @@ namespace Store.Tests.Fixtures
             return new OrderDto
             {
                 Id = newId ? new Randomizer().Int(0, 1000) : 0,
-                Price = It.IsAny<decimal>(),
+                Price = new Randomizer().Decimal(1, 1000),
                 CreatedAt = It.IsAny<DateTime>(),
                 Status = Status.Awaiting.ToString(),
-                CostumerId = It.IsAny<int>()
+                CostumerId = new Randomizer().Int(1, 1000)
             };
         }
 
