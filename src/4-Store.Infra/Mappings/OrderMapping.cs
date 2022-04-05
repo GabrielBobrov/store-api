@@ -14,6 +14,10 @@ namespace Store.Infra.Mappings
 
             builder.Property(x => x.Id)
                 .HasColumnType("BIGINT");
+
+            builder.HasOne<Costumer>(c => c.Costumer)
+               .WithMany(o => o.Orders)
+               .HasForeignKey(f => f.CostumerId);
         }
     }
 }
