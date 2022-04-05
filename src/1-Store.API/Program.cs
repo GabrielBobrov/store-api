@@ -61,7 +61,10 @@ builder.Services.AddAuthentication(x =>
 var autoMapperConfig = new MapperConfiguration(cfg =>
 {
     cfg.CreateMap<Costumer, CostumerDto>().ReverseMap();
+    cfg.CreateMap<Order, OrderDto>().ReverseMap();
+
     cfg.CreateMap<CreateCostumerViewModel, CostumerDto>().ReverseMap();
+    cfg.CreateMap<CreateOrderViewModel, OrderDto>().ReverseMap();
 });
 
 builder.Services.AddSingleton(autoMapperConfig.CreateMapper());
@@ -71,6 +74,7 @@ builder.Services.AddSingleton(autoMapperConfig.CreateMapper());
 #region Services
 builder.Services.AddSingleton(d => builder.Configuration);
 builder.Services.AddScoped<ICostumerServices, CostumerServices>();
+builder.Services.AddScoped<IOrderServices, OrderService>();
 builder.Services.AddScoped<ICostumerRepository, CostumerRepository>();
 builder.Services.AddScoped<IOrderRepository, orderRepository>();
 #endregion
