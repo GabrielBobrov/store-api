@@ -78,7 +78,7 @@ namespace Store.API.Controllers
 
             return Ok(new ResultViewModel
             {
-                Message = ResponseMessages.SuccessMessageGetAllOCostumers,
+                Message = ResponseMessages.SuccessMessageGetAllCostumers,
                 Success = true,
                 Data = allCostumers.Value
             });
