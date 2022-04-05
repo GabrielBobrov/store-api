@@ -1,0 +1,6 @@
+{
+  "Store.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/gabrielgomesbobrovlopes\/Desktop\/dev\/VisualStudio\/Store\/src\/5-Store.Core",
+  "Store.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/gabrielgomesbobrovlopes\/Desktop\/dev\/VisualStudio\/Store\/src\/2-Store.Domain",
+  "Store.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/gabrielgomesbobrovlopes\/Desktop\/dev\/VisualStudio\/Store\/src\/4-Store.Infra",
+  "Store.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/gabrielgomesbobrovlopes\/Desktop\/dev\/VisualStudio\/Store\/src\/3-Store.Services"
+}
