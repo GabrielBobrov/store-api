@@ -4,6 +4,8 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using AutoMapper;
 using EscNet.Cryptography.Interfaces;
+using EscNet.Mails.Interfaces;
+using EscNet.Mails.Models;
 using Store.Core.Communication.Mediator.Interfaces;
 using Store.Core.Communication.Messages.Notifications;
 using Store.Core.Enums;
@@ -22,17 +24,21 @@ namespace Store.Services.Services
         private readonly ICostumerRepository _costumerRepository;
         private readonly IOrderRepository _orderRepository;
         private readonly IMediatorHandler _mediator;
+        private readonly IEmailSender _emailSender;
+
 
         public CostumerServices(
             IMapper mapper,
             ICostumerRepository costumerRepository,
             IOrderRepository orderRepository,
-            IMediatorHandler mediator)
+            IMediatorHandler mediator,
+            IEmailSender emailSender)
         {
             _mapper = mapper;
             _costumerRepository = costumerRepository;
             _orderRepository = orderRepository;
             _mediator = mediator;
+            _emailSender = emailSender;
         }
 
         public async Task<Optional<CostumerDto>> CreateAsync(CostumerDto costumerDto)
@@ -64,6 +70,16 @@ namespace Store.Services.Services
             }
 
             var costumerCreated = await _costumerRepository.CreateAsync(costumer);
+
+            var email = new Email
+            {
+                Receiver = costumer.Email,
+                Subject = "You created a new account!",
+                Body = "Thanks for create a new account!"
+            };
+
+            _emailSender.SendEmail(email);
+
 
             return _mapper.Map<CostumerDto>(costumerCreated);
         }

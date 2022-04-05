@@ -1,6 +1,7 @@
 using System.Text;
 using AutoMapper;
 using EscNet.IoC.Cryptography;
+using EscNet.IoC.Mails;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -77,6 +78,8 @@ builder.Services.AddScoped<ICostumerServices, CostumerServices>();
 builder.Services.AddScoped<IOrderServices, OrderService>();
 builder.Services.AddScoped<ICostumerRepository, CostumerRepository>();
 builder.Services.AddScoped<IOrderRepository, orderRepository>();
+builder.Services.AddEmailSender("emaililiadigital@gmail.com", "iliadigital123");
+
 #endregion
 
 #region Database

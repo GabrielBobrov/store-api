@@ -17,6 +17,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Xunit;
 using System.Linq.Expressions;
+using EscNet.Mails.Interfaces;
 
 namespace Store.Tests.Projects.Services
 {
@@ -32,18 +33,22 @@ namespace Store.Tests.Projects.Services
 
         private readonly Mock<IMediatorHandler> _mediatorHandler;
 
+        private readonly Mock<IEmailSender> _emailSender;
+
         public CostumerServiceTests()
         {
             _mapper = AutoMapperConfiguration.GetConfiguration();
             _costumerRepositoryMock = new Mock<ICostumerRepository>();
             _orderRepositoryMock = new Mock<IOrderRepository>();
             _mediatorHandler = new Mock<IMediatorHandler>();
+            _emailSender = new Mock<IEmailSender>();
 
             _sut = new CostumerServices(
                 mapper: _mapper,
                 costumerRepository: _costumerRepositoryMock.Object,
                 orderRepository: _orderRepositoryMock.Object,
-                mediator: _mediatorHandler.Object);
+                mediator: _mediatorHandler.Object,
+                emailSender: _emailSender.Object);
         }
 
         #region Create
